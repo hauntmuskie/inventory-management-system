@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="anchorPane" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lestarieragemilang.app.Login">
+   <children>
+      <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1200.0">
+         <left>
+            <ImageView fitHeight="600.0" fitWidth="1200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@Assets/Images/javanese_dancer_by_charliesartbox_dgjw10q.jpg" />
+               </image>
+            </ImageView>
+         </left>
+         <right>
+            <VBox alignment="CENTER" prefHeight="600.0" prefWidth="675.0" spacing="30.0" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane prefHeight="107.0" prefWidth="500.0">
+                     <children>
+                        <Label onMouseClicked="#closeApp" style="-fx-cursor: hand;" text="Keluar" textFill="RED" underline="true" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="70.0" prefWidth="600.0">
+                     <children>
+                        <Label fx:id="greetingText" text="Hai, Admin" underline="true">
+                           <font>
+                              <Font name="System Bold" size="36.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <VBox prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                     <children>
+                        <Label text="Username">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="username" prefHeight="40.0" prefWidth="100.0" promptText="Masukan Username" style="-fx-background-radius: 10;" />
+                        <Label text="Password">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <PasswordField fx:id="password" prefHeight="40.0" prefWidth="100.0" promptText="Masukan Password" style="-fx-background-radius: 10;" />
+                     </children>
+                  </VBox>
+                  <JFXButton buttonType="RAISED" onAction="#loginToApp" prefHeight="50.0" prefWidth="80.0" style="-fx-background-color: orange; -fx-background-radius: 20; -fx-cursor: hand;" text="Masuk">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </JFXButton>
+                  <AnchorPane prefHeight="75.0" prefWidth="500.0">
+                     <children>
+                        <Label fx:id="localTimeApp" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+               </children>
+               <padding>
+                  <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+               </padding>
+            </VBox>
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>

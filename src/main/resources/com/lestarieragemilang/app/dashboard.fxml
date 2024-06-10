@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="bp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lestarieragemilang.app.dashboardController">
+   <left>
+      <VBox alignment="TOP_CENTER" prefHeight="575.0" prefWidth="230.0" spacing="10.0" style="-fx-background-color: #f8feff; -fx-border-color: #dbd8e3;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="230.0" spacing="5.0">
+               <children>
+                  <ImageView fitHeight="35.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label alignment="BASELINE_LEFT" style="-fx-font-weight: bold;" text="Admin" textFill="#0b1215">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+            <Separator prefWidth="200.0" />
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="230.0" spacing="10.0">
+               <children>
+                  <ImageView cache="true" fitHeight="35.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-color: #dbd8e3;" styleClass="navText">
+                     <image>
+                        <Image url="@Assets/Images/file-cabinet_.png" />
+                     </image></ImageView>
+                  <JFXButton alignment="BASELINE_LEFT" buttonType="RAISED" onMouseClicked="#setSceneData" prefHeight="50.0" prefWidth="155.0" style="-fx-background-color: #131313; -fx-background-radius: 10; -fx-cursor: hand;" text="Data" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="230.0" spacing="10.0">
+               <children>
+                  <ImageView fitHeight="35.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" styleClass="navText">
+                     <image>
+                        <Image url="@Assets/Images/bar-chart_.png" />
+                     </image></ImageView>
+                  <JFXButton alignment="BASELINE_LEFT" buttonType="RAISED" prefHeight="50.0" prefWidth="155.0" style="-fx-background-color: #131313; -fx-background-radius: 10; -fx-cursor: hand;" text="Statistik" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="230.0" spacing="10.0">
+               <children>
+                  <ImageView fitHeight="35.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" styleClass="navText">
+                     <image>
+                        <Image url="@Assets/Images/bookmark-tabs_.png" />
+                     </image></ImageView>
+                  <JFXButton alignment="BASELINE_LEFT" buttonType="RAISED" prefHeight="50.0" prefWidth="155.0" style="-fx-background-color: #131313; -fx-background-radius: 10; -fx-cursor: hand;" text="Laporan" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </left>
+   <top>
+      <AnchorPane prefHeight="75.0" prefWidth="200.0" style="-fx-background-color: #2A2438;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="109.0" layoutY="21.0" text="PT LESTARI ERA GEMILANG" textFill="#dbd8e3" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <JFXButton onMouseClicked="#isExitApp" prefHeight="40.0" prefWidth="35.0" style="-fx-background-color: red; -fx-background-radius: 100;" text="X" textFill="WHITE" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane fx:id="setScene" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #dbd8e3; -fx-background-color: white;" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
