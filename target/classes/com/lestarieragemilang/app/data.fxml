@@ -260,9 +260,9 @@
                                                       </VBox>
                                                       <VBox alignment="BASELINE_LEFT" prefHeight="133.0" prefWidth="116.0" spacing="20.0">
                                                          <children>
-                                                            <TextField style="-fx-background-radius: 5;" />
-                                                            <TextField style="-fx-background-radius: 5;" />
-                                                            <TextField style="-fx-background-radius: 5;" />
+                                                            <TextField fx:id="supplierIdField" style="-fx-background-radius: 5;" />
+                                                            <TextField fx:id="supplierNameField" style="-fx-background-radius: 5;" />
+                                                            <TextField fx:id="supplierContactField" style="-fx-background-radius: 5;" />
                                                          </children>
                                                       </VBox>
                                                    </children>
@@ -293,8 +293,8 @@
                                                       </VBox>
                                                       <VBox alignment="BASELINE_LEFT" prefHeight="133.0" prefWidth="116.0" spacing="20.0">
                                                          <children>
-                                                            <TextField style="-fx-background-radius: 5;" />
-                                                            <TextField style="-fx-background-radius: 5;" />
+                                                            <TextField fx:id="supplierAddressField" style="-fx-background-radius: 5;" />
+                                                            <TextField fx:id="supplierEmailField" style="-fx-background-radius: 5;" />
                                                          </children>
                                                       </VBox>
                                                    </children>
@@ -304,7 +304,7 @@
                                           </HBox>
                                           <HBox alignment="CENTER_RIGHT" layoutX="687.0" layoutY="143.0" prefHeight="33.0" prefWidth="392.0" spacing="10.0" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="200.0">
                                              <children>
-                                                <JFXButton buttonType="RAISED" prefHeight="30.0" prefWidth="124.0" style="-fx-background-color: #131313; -fx-background-radius: 10; -fx-cursor: HAND;" text="Tambah Data" textFill="WHITE">
+                                                <JFXButton fx:id="supplierActionButton" buttonType="RAISED" prefHeight="30.0" prefWidth="124.0" style="-fx-background-color: #131313; -fx-background-radius: 10; -fx-cursor: HAND;" text="Tambah Data" textFill="WHITE">
                                                    <font>
                                                       <Font size="14.0" />
                                                    </font>
@@ -329,9 +329,15 @@
                                        <children>
                                           <TableView layoutX="164.0" layoutY="47.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="0.0">
                                              <columns>
-                                                <TableColumn prefWidth="75.0" text="C1" />
-                                                <TableColumn prefWidth="75.0" text="C2" />
+                                                <TableColumn prefWidth="75.0" text="ID SUPPLIER" />
+                                                <TableColumn prefWidth="75.0" text="NAMA SUPPLIER" />
+                                                <TableColumn prefWidth="75.0" text="KONTAK" />
+                                                <TableColumn prefWidth="75.0" text="ALAMAT" />
+                                                <TableColumn prefWidth="75.0" text="EMAIL" />
                                              </columns>
+                                             <columnResizePolicy>
+                                                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                             </columnResizePolicy>
                                           </TableView>
                                        </children>
                                     </AnchorPane>
